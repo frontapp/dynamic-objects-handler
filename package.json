@@ -1,0 +1,27 @@
+{
+  "name": "dynamic-object-handler",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "prettier": "prettier --write ."
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "!(**/.vercel/**/*)**/*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --no-eslintrc --no-ignore --max-warnings=0 --fix"
+    ],
+    "**/*.{json,md,mdx,css,html,yml,yaml,scss}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^5.2",
+    "prettier": "^3.0",
+    "eslint": "^8.51",
+    "husky": "^8.0",
+    "lint-staged": "^15.0"
+  }
+}

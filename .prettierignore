@@ -1,0 +1,11 @@
+# Ignore generated directories
+.next
+.vercel
+dist
+node_modules
+public
+
+# Ignore dependency locks
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
