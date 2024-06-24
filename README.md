@@ -1,8 +1,10 @@
-# Front Dynamic Object Handler on Vercel Node
+# Front Application Object Handler on Vercel Node
 
-This sample project demonstrates how you can configure a server to verify that incoming requests are coming from Front, and then pass information from an API response to a dynamic object in Front.
+This sample project demonstrates how you can configure a server to verify that incoming requests are coming from Front, and then pass information from an API response to an application object in Front.
 
-This allows you to augment the information that a dynamic object presents to Front users by adding additional fields other than a title and link to an external record, such as additional IDs, statuses, notes, assignees, and anything else stored in the external system.
+This allows you to augment the information that an application object presents to Front users by adding additional fields other than a title and link to an external record, such as additional IDs, statuses, notes, assignees, and anything else stored in the external system.
+
+**Note:** You'll see "dynamic object" terminology in this repo. This is because application objects were previously named dynamic objects.
 
 ## Get started
 
